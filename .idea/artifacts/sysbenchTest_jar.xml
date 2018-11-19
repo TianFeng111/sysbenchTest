@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="sysbenchTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sysbenchTest_jar</output-path>
+    <root id="archive" name="sysbenchTest.jar">
+      <element id="module-output" name="sysbenchTest" />
+    </root>
+  </artifact>
+</component>
