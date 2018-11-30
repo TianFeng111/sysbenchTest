@@ -34,7 +34,7 @@ public class SysTest {
         String[] oltpTrans = new String[241];
         String[] oltpQue = new String[241];
         String[] oltp = new String[241];
-        for (int i=0;i<size;i++){       //循环体  基于测试数据组数
+        for (int i=1;i<=size;i++){       //循环体  基于测试数据组数
             fileControl.cleanFile(my);      //清空mysql配置文件
             String[] a = array[i].split(",");      //将单组测试数据存入一个长为11得字符数组
             try {
@@ -129,7 +129,7 @@ public class SysTest {
 //                bufferedWriter.write(cpu[i]+","+memory[i]+","+threads[i]+","+mutex[i]+","+oltpTrans[i]+","+oltpQue[i]+","+oltp[i]);
 //                bufferedWriter.newLine();
 //                bufferedWriter.close();
-                System.out.println("第"+(i+60)+"次结果写入完成...");
+                System.out.println("第"+i+"次结果写入完成...");
             }catch (FileNotFoundException e){
             e.printStackTrace();
             }catch (IOException e){
